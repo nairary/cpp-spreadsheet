@@ -7,7 +7,7 @@
 + cmake ../spreadsheet -DCMAKE_BUILD_TYPE=Release
 + cmake --build ./ If you need Debug version, use -DCMAKE_BUILD_TYPE=Debug flag
 # Руководство по применению
-'''
+```
 auto sheet = CreateSheet();           * Создали новую таблицу *
 sheet->SetCell("A2"_pos, "meow");   |
 sheet->SetCell("B2"_pos, "=1+2");   | * Добавили формулы в ячейки *
@@ -21,4 +21,4 @@ std::ostringstream values;
 sheet->PrintValues(values);           * Вывели значения ячеек таблици в поток вывода *** std::ostringstream *** *
 
 sheet->ClearCell("B2"_pos);           * Удалили ячейку *** B2 *** область вывода изменена *
-'''
+```
